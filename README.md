@@ -22,11 +22,13 @@ A Python application designed to help users find business information using the 
 Install the required packages:
 
 ```bash
-py -m pip install requests python-dotenv openpyxl
+py -m pip install -r requirements.txt
 ```
 
 ## Configuration
-Create a `.env` file and add your Google API key:
+Create a `.env` file in the project folder.
+
+Add your Google API key:
 
 ```text
 GOOGLE_MAPS_API_KEY=your_api_key_here
