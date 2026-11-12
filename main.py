@@ -42,16 +42,21 @@ def search_for_businesses():
         businesses = search_businesses(category, location, limit)
 
     else:
-        print("\nUsing sample data for testing...")
+        print("\nUsing sample data for demonstration only...")
+        print("These are fictional examples, not real business results.")
 
         businesses = [
             {
-                "displayName": {"text": "Eldoret Electronics"},
-                "formattedAddress": "Eldoret, Kenya"
+                "displayName": {
+                    "text": f"Sample {category.title()} Business 1"
+                },
+                "formattedAddress": f"Example location: {location}"
             },
             {
-                "displayName": {"text": "Eldoret Auto Garage"},
-                "formattedAddress": "Eldoret, Kenya"
+                "displayName": {
+                    "text": f"Sample {category.title()} Business 2"
+                },
+                "formattedAddress": f"Example location: {location}"
             }
         ]
 
